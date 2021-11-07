@@ -22,7 +22,14 @@ function checksExistsUserAccount(request, response, next) {
 }
 
 function checksCreateTodosUserAvailability(request, response, next) {
-  // Complete aqui
+  const { user } = request;
+
+  if (user.todos.length >= 10 && !user.pro) {
+    return response.status(403).json({ error: "Exceeded todos limit for free plan!" })
+  } else {
+    request.user = user;
+    next();
+  }
 }
 
 function checksTodoExists(request, response, next) {
