@@ -1,7 +1,7 @@
 # rocketSeat-challenge01-middlewares-nodeJs
 Desafio da trilha NodeJs do Ignite - Rocketseat
 
-Objetido desse desafio era implementar os middlewares para o funcionamneto do sistema.
+Objetivo desse desafio era implementar os middlewares para o funcionamneto do sistema.
 
 OBS: Foi usado um template disponibilizado pela Rocketseat.
 
